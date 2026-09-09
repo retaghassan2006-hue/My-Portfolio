@@ -12,6 +12,35 @@
 
 <body>
 
+    <nav class="navbar">
+        <a href="#top" class="nav-logo">Retaj Hassan</a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <line x1="12" y1="1.5" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22.5"></line>
+                <line x1="4.2" y1="4.2" x2="6" y2="6"></line>
+                <line x1="18" y1="18" x2="19.8" y2="19.8"></line>
+                <line x1="1.5" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22.5" y2="12"></line>
+                <line x1="4.2" y1="19.8" x2="6" y2="18"></line>
+                <line x1="18" y1="6" x2="19.8" y2="4.2"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.5 14.5a8.5 8.5 0 0 1-11-11 8.5 8.5 0 1 0 11 11z"></path>
+            </svg>
+        </button>
+    </nav>
+
     <div class="bg-field" aria-hidden="true">
         <span class="float-icon fi-1">&lt;/&gt;</span>
         <span class="float-icon fi-2">{ }</span>
@@ -27,7 +56,7 @@
         <span class="float-icon fi-12">✎</span>
     </div>
 
-    <section class="cover">
+    <section class="cover" id="top">
         <div class="text-col">
             <p class="eyebrow">Alexandria, Egypt</p>
             <h1 class="name">Retaj Hassan Mohamed</h1>
@@ -36,6 +65,7 @@
                 Where logic meets creativity—that's where I build. Crafting ideas into functional, clean code.
             </p>
             <div class="cta-row">
+                <a href="image/Retaj Hassan CV.pdf" target="_blank" class="btn-secondary">View my CV</a>
                 <a href="#projects" class="btn-primary">View my work</a>
                 <a href="#contact" class="btn-secondary">Get in touch</a>
             </div>
@@ -240,14 +270,23 @@
                     <span class="contact-label">Phone</span>
                     <span class="contact-value">+20 112 473 0630</span>
                 </a>
-                <a href="https://www.linkedin.com/in/retaj-hassan-98957a409?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener" class="contact-link">
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-value">https://www.linkedin.com/in/retaj-hassan-98957a409?utm_source=share_via&utm_content=profile&utm_medium=member_ios</span>
-                </a>
                 <div class="contact-link contact-link-static">
                     <span class="contact-label">Location</span>
                     <span class="contact-value">Alexandria, Egypt</span>
                 </div>
+            </div>
+
+            <div class="social-row">
+                <a href="https://www.linkedin.com/in/retaj-hassan-98957a409?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/retaghassan2006-hue" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                    <svg viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -266,6 +305,30 @@
         <p class="footer-name">Retaj Hassan Mohamed</p>
         <p class="footer-note">Alexandria, Egypt</p>
     </footer>
+    <script>
+        (function() {
+            var root = document.documentElement;
+            var toggle = document.getElementById('themeToggle');
+
+            function applyTheme(theme) {
+                root.setAttribute('data-theme', theme);
+                try {
+                    localStorage.setItem('portfolio-theme', theme);
+                } catch (e) {}
+            }
+
+            var saved = null;
+            try {
+                saved = localStorage.getItem('portfolio-theme');
+            } catch (e) {}
+            applyTheme(saved || 'dark');
+
+            toggle.addEventListener('click', function() {
+                var current = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                applyTheme(current);
+            });
+        })();
+    </script>
 
 </body>
 

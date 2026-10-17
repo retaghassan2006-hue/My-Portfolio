@@ -1053,3 +1053,24 @@ h1.name {
         padding: 3rem 1.8rem;
     }
 }
+.project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: inherit;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.project-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .3);
+}
